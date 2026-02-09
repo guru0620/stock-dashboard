@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loadingScreen">Loading stock data...</div>
+
+    <h1 class="title">Stock Market Analysis</h1>
+    <div class="container">
+
+        <!-- TOP SECTION -->
+        <div class="top-section">
+
+            <!-- CHART SECTION -->
+            <div class="chart-section">
+                <canvas id="stockChart"></canvas>
+
+                <div class="range-buttons">
+                   <button class="range-btn" id="btn1m">1 Month</button>
+<button class="range-btn" id="btn3m">3 Month</button>
+<button class="range-btn" id="btn1y">1 Year</button>
+<button class="range-btn" id="btn5y">5 Year</button>
+
+                </div>
+            </div>
+
+            <!-- STOCK LIST -->
+            <div class="stock-list" id="stockList">
+                <!-- stocks will come here -->
+            </div>
+
+        </div>
+
+        <!-- DETAILS SECTION -->
+        <div class="details" id="details">
+            <h2>Stock Details</h2>
+            <p>Select a stock to see details</p>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
